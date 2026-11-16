@@ -1,0 +1,8 @@
+- name: Đồng bộ code lên Hosting qua FTP
+          uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+          with:
+            server: ftpupload.net
+            username: if0_43453392  # <--- SỬA THÀNH USERNAME CỦA BẠN
+            password: ${{ secrets.FTP_PASSWORD }}  # <--- DÒNG NÀY GIỮ NGUYÊN Y HỆT
+            server-dir: /htdocs/
+
